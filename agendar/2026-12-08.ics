@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Maestro Remates//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-08-5RemateMixtoSelecto@maestroremates.com
+DTSTAMP:20261120T044443Z
+DTSTART:20261208T220000Z
+DTEND:20261209T010000Z
+SUMMARY:5º Remate Mixto Selecto – Maestro Remates
+DESCRIPTION:Ejemplares en Training\, Yearlings y Yeguas Madre\nTransmisión en vivo: https://www.maestroremates.com/#en-vivo\nConsultas: https://wa.me/59898041108
+URL:https://www.maestroremates.com/#remates
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:5º Remate Mixto Selecto – Maestro Remates
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:5º Remate Mixto Selecto – Maestro Remates
+END:VALARM
+END:VEVENT
+END:VCALENDAR

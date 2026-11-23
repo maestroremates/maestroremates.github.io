@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Maestro Remates//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-16-StudHarasPhillipson@maestroremates.com
+DTSTAMP:20261120T044443Z
+DTSTART:20261216T220000Z
+DTEND:20261217T010000Z
+SUMMARY:Remate Stud & Haras Phillipson – Maestro Remates
+DESCRIPTION:Ejemplares en Training y Yeguas Madre\nTransmisión en vivo: https://www.maestroremates.com/#en-vivo\nConsultas: https://wa.me/59898041108
+URL:https://www.maestroremates.com/#remates
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Remate Stud & Haras Phillipson – Maestro Remates
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Remate Stud & Haras Phillipson – Maestro Remates
+END:VALARM
+END:VEVENT
+END:VCALENDAR
