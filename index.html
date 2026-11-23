@@ -474,7 +474,7 @@ footer a:hover { color: #fff; }
 .fx-x { position: absolute; top: 10px; right: 10px; width: 40px; height: 40px; border: 0; border-radius: 50%; background: var(--soft); color: var(--navy); font-size: 24px; cursor: pointer; z-index: 2; }
 .fx-hd { padding: 26px 26px 18px; }
 .fx-hd h2 { font-size: 28px; margin: 11px 0 6px; color: var(--navy); text-transform: uppercase; letter-spacing: .03em; }
-.fx-hd p { margin: 0 0 6px; color: var(--navy); line-height: 1.4; }
+.fx-hd p { margin: 0 0 6px; color: var(--navy); line-height: 1.4; } .fx-hd .ped-l span { display: inline-block; } /* "por <abuelo materno>" baja entero, nunca cortado */
 .fx-hd .facts { color: var(--muted); }
 .fx .sx { display: inline-block; font: 600 11px/1 var(--head); letter-spacing: .08em; text-transform: uppercase; padding: 5px 8px; border-radius: 3px; margin-right: 4px; vertical-align: 1px; }
 .horse .sx.c, .video .sx.c, .fx .sx.c { background: #e8e6f6; color: #4b3f9c; }
@@ -1369,7 +1369,7 @@ footer a:hover { color: #fff; }
     ['pointerenter', 'touchstart', 'focus'].forEach(function (ev) { b.addEventListener(ev, function () { getF(t); }, { passive: true }); });
     b.addEventListener('click', function () { b.classList.add('cargando'); getF(t, function (html) { b.classList.remove('cargando');
       fx.querySelector('.fx-hd').innerHTML = '<span class="tag">' + h.querySelector('.tag').innerHTML + '</span>' + (h.querySelector('.nuevo') ? h.querySelector('.nuevo').outerHTML : '') + '<h2>' + h.querySelector('h3').textContent + '</h2>' +
-        '<p>' + h.querySelector('.ped').innerHTML.replace('</span><span', '</span> <span') + '</p><p class="facts">' + h.querySelector('.facts').innerHTML + '</p>' + (h.querySelector('.corre') ? h.querySelector('.corre').outerHTML : '');
+        '<p class="ped-l">' + h.querySelector('.ped').innerHTML.replace('</span><span', '</span> <span') + '</p><p class="facts">' + h.querySelector('.facts').innerHTML + '</p>' + (h.querySelector('.corre') ? h.querySelector('.corre').outerHTML : '');
       fx.querySelector('.fx-buy').innerHTML = h.querySelector('.buy').innerHTML;
       /* Compartir la ficha por WhatsApp: link directo que abre esta misma ficha */
       if (!h.classList.contains('vendido')) {
