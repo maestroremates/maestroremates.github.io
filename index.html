@@ -368,9 +368,9 @@ footer a:hover { color: #fff; }
 .horse.sx-h { border-top-color: #d9719f; }
 .horse .buy { margin-top: auto !important; }
 .horse.fuera { display: none !important; }
-.horse .nuevo { position: absolute; top: 18px; right: -34px; transform: rotate(45deg); background: var(--gold); color: var(--navy); font: 800 12px/1 var(--head); letter-spacing: .18em; text-transform: uppercase; padding: 7px 40px; box-shadow: 0 2px 6px rgba(0,0,0,.18); pointer-events: none; }
+.horse .nuevo { position: absolute; top: 24px; right: -38px; width: 150px; box-sizing: border-box; text-align: center; text-indent: .18em; transform: rotate(45deg); background: var(--gold); color: var(--navy); font: 800 12px/1 var(--head); letter-spacing: .18em; text-transform: uppercase; padding: 7px 0; box-shadow: 0 2px 6px rgba(0,0,0,.18); pointer-events: none; } /* ancho fijo y centro sobre la diagonal: NUEVO y NEW quedan centrados */
 .horse:has(.nuevo) { position: relative; overflow: hidden; }
-.fx-hd .nuevo { display: inline-block; margin-left: 6px; background: var(--gold); color: var(--navy); font: 800 11px/1 var(--head); letter-spacing: .14em; text-transform: uppercase; padding: 6px 8px; border-radius: 2px; vertical-align: middle; }
+.fx-hd .nuevo { display: inline-block; margin-left: 6px; background: var(--gold); color: var(--navy); font: 800 11px/1 var(--head); letter-spacing: .14em; text-transform: uppercase; padding: 6px calc(8px - .14em) 6px 8px; border-radius: 2px; vertical-align: middle; }
 .horse .corre, .fx-hd .corre { align-self: stretch; display: flex; align-items: center; gap: 8px; background: var(--gold); color: var(--navy); font: 800 11.5px/1.25 var(--head); letter-spacing: .1em; text-transform: uppercase; padding: 8px 10px; border-radius: 3px; margin: 4px 0 0; }
 .horse .corre::before, .fx-hd .corre::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: 50%; background: #c0392b; box-shadow: 0 0 0 3px rgba(192,57,43,.25); }
 .fx-hd p.corre { display: inline-flex; margin: 4px 0 6px; }
