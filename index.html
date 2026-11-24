@@ -558,7 +558,7 @@ footer a:hover { color: #fff; }
 .fx-play { width: 44px; height: 32px; border: 0; border-radius: 9px; background: #e62117; color: #fff; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; }
 .fx-play svg { width: 52%; height: 62%; display: block; }
 .fx-play.on { outline: none; }
-.fx-play:hover { background: #c4120a; }
+.fx-play:hover { background: #c4120a; } .fx-play.sinvideo { cursor: default; } .fx-play.sinvideo:hover { background: #e62117; }
 .fx-prod { list-style: none; margin: 0; padding: 0; }
 .fx-prod li { display: flex; gap: 14px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--line); }
 .fx-prod .yr { flex: none; width: 62px; text-align: center; background: var(--soft); border-radius: 8px; padding: 10px 0; font: 800 16px/1 var(--head); color: var(--navy); }
@@ -911,7 +911,7 @@ footer a:hover { color: #fff; }
         <p class="facts"><span class="sx m" data-en="Colt">Macho</span> <span data-en="Bay · 22/07/2023">Zaino · 22/07/2023</span></p>
         <p class="camp" data-en="Winner at Maroñas">Ganador en Maroñas</p>
         <div class="buy"><span class="price">USD 5.000</span><a class="ask" href="https://wa.me/59898041108?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20El%20Elegido%20%28venta%20particular%29." target="_blank" rel="noopener" data-en="Enquire">Consultar</a></div>
-        <template class="ficha" data-src="/fichas/el-elegido.html?v=aa9b5182"></template>
+        <template class="ficha" data-src="/fichas/el-elegido.html?v=8ce89f4c"></template>
       </article>
       <article class="horse sx-h" data-cat="t" data-vendido="2026-11-21T12:30:00-03:00" data-publicado="2026-11-19">
         <span class="tag" data-en="4 years old">4 años</span>
@@ -1418,6 +1418,7 @@ footer a:hover { color: #fff; }
         var on = body.querySelector('.fx-play[data-yt="' + v.dataset.yt + '"]'); if (on) on.classList.add('on');
       }
       body.querySelectorAll('.fx-play').forEach(function (pb) { pb.addEventListener('click', function () {
+        if (!pb.dataset.yt) return; /* video todavía no subido: el botón no hace nada */
         var li = pb.closest('li');
         v.innerHTML = '<iframe src="' + yt(pb.dataset.yt, true) + '" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen title="Video de la carrera"></iframe>';
         body.querySelectorAll('.fx-play.on').forEach(function (x) { x.classList.remove('on'); }); pb.classList.add('on');
